@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNk-mJ-rGj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bnc-QP-ne7">
+            <objects>
+                <viewController id="hNk-mJ-rGj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IXw-rQ-1XV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aND-Ip-uuI">
+                                <rect key="frame" x="16" y="393" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created for Mandiri Bank Joining Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmI-Cd-yNP">
+                                <rect key="frame" x="16" y="429.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="axS-YF-u3j" firstAttribute="trailing" secondItem="aND-Ip-uuI" secondAttribute="trailing" constant="16" id="8v7-nM-Rtz"/>
+                            <constraint firstItem="axS-YF-u3j" firstAttribute="trailing" secondItem="hmI-Cd-yNP" secondAttribute="trailing" constant="16" id="BmK-T7-laU"/>
+                            <constraint firstItem="aND-Ip-uuI" firstAttribute="leading" secondItem="axS-YF-u3j" secondAttribute="leading" constant="16" id="Ptf-4D-N0Q"/>
+                            <constraint firstItem="hmI-Cd-yNP" firstAttribute="top" secondItem="aND-Ip-uuI" secondAttribute="bottom" constant="7.5" id="TAB-eo-hZX"/>
+                            <constraint firstItem="aND-Ip-uuI" firstAttribute="centerY" secondItem="axS-YF-u3j" secondAttribute="centerY" multiplier="0.9" id="iQC-Dw-JSe"/>
+                            <constraint firstItem="hmI-Cd-yNP" firstAttribute="leading" secondItem="axS-YF-u3j" secondAttribute="leading" constant="16" id="sur-qt-CV5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="axS-YF-u3j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKc-8t-fCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+</document>

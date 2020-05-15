@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nyz-Q3-Kp4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Genres-->
+        <scene sceneID="Pad-oF-rep">
+            <objects>
+                <viewController storyboardIdentifier="movieGenreViewController" id="Nyz-Q3-Kp4" customClass="MovieGenreViewController" customModule="VIPER_AssesmentTEst" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKi-wJ-fIX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-bg-dUj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nyz-Q3-Kp4" id="9c6-k2-aX5"/>
+                                    <outlet property="delegate" destination="Nyz-Q3-Kp4" id="DlL-GF-E1f"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="44a-Ib-iLT">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sy-UR-Adq">
+                                <rect key="frame" x="16" y="448" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="44a-Ib-iLT" firstAttribute="centerY" secondItem="fKi-wJ-fIX" secondAttribute="centerY" id="212-e0-IQG"/>
+                            <constraint firstItem="rWg-95-9lv" firstAttribute="trailing" secondItem="1Sy-UR-Adq" secondAttribute="trailing" constant="16" id="8oj-ug-fwd"/>
+                            <constraint firstItem="1Sy-UR-Adq" firstAttribute="leading" secondItem="rWg-95-9lv" secondAttribute="leading" constant="16" id="GsT-dV-QST"/>
+                            <constraint firstItem="nc0-bg-dUj" firstAttribute="leading" secondItem="rWg-95-9lv" secondAttribute="leading" id="KvS-cE-MJu"/>
+                            <constraint firstItem="nc0-bg-dUj" firstAttribute="top" secondItem="rWg-95-9lv" secondAttribute="top" id="Pkh-q1-4mY"/>
+                            <constraint firstItem="1Sy-UR-Adq" firstAttribute="centerX" secondItem="fKi-wJ-fIX" secondAttribute="centerX" id="VB2-Pq-SSk"/>
+                            <constraint firstItem="44a-Ib-iLT" firstAttribute="centerX" secondItem="fKi-wJ-fIX" secondAttribute="centerX" id="Yr5-S3-8Gk"/>
+                            <constraint firstItem="1Sy-UR-Adq" firstAttribute="centerY" secondItem="fKi-wJ-fIX" secondAttribute="centerY" id="fMM-zQ-mBD"/>
+                            <constraint firstItem="rWg-95-9lv" firstAttribute="trailing" secondItem="nc0-bg-dUj" secondAttribute="trailing" id="iPS-cL-Kgt"/>
+                            <constraint firstItem="rWg-95-9lv" firstAttribute="bottom" secondItem="nc0-bg-dUj" secondAttribute="bottom" id="lNA-jP-bDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rWg-95-9lv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Genres" largeTitleDisplayMode="always" id="PTx-HF-R60"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="44a-Ib-iLT" id="Wk7-WW-XBU"/>
+                        <outlet property="infoLabel" destination="1Sy-UR-Adq" id="jy4-BH-Kan"/>
+                        <outlet property="tableView" destination="nc0-bg-dUj" id="pOj-Dr-OB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="se4-Ki-ShX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="1318"/>
+        </scene>
+    </scenes>
+</document>
